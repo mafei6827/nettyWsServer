@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.betmatrix.theonex</groupId>
+    <groupId>org.carl</groupId>
     <artifactId>nettyWSServer</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -202,47 +202,6 @@
             <properties>
                 <bootstrap.servers>barcelona.leadadvancetech.com:6667,madrid.leadadvancetech.com:6667</bootstrap.servers>
                 <group.id>server186</group.id>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>test</id>
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>test</value>
-                </property>
-            </activation>
-            <properties>
-                <bootstrap.servers>madrid.leadadvancetech.com:6667</bootstrap.servers>
-                <group.id>server47</group.id>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>prod</id>
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>prod</value>
-                </property>
-            </activation>
-            <properties>
-                <bootstrap.servers>madrid.fotintel.com:6667,barcelona.fotintel.com:6667</bootstrap.servers>
-                <group.id>serverProd</group.id>
-            </properties>
-        </profile>
-        <profile>
-            <id>prev</id>
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>prev</value>
-                </property>
-            </activation>
-            <properties>
-                <bootstrap.servers>madrid.leadadvancetech.com:6667</bootstrap.servers>
-                <group.id>server35</group.id>
             </properties>
         </profile>
     </profiles>
